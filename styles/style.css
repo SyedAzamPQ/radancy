@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #828282;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.site-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #00945f;
+}
+
+p {
+  font-size: 16px;
+  color: #828282;
+  line-height: 1.8em;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 300px;
+  height: auto;
+}
+
+.hero-banner {
+  background: url(../images/citizen-bank-banner.webp) top /cover no-repeat;
+  height: 590px;
+}
+
+main h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+main h3::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #00945f;
+  margin: 20px auto 0;
+}
+
+.careers-overview button {
+  display: block;
+  margin: 0 auto;
+  background-color: #e97300;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.careers-overview button:hover {
+  background-color: #00945f;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.careers-overview button:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.advantages-grid {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.advantages-grid .advantage-card {
+  position: relative;
+}
+
+.advantages-grid .advantage-card:nth-child(1)::after, .advantages-grid .advantage-card:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  right: -70px;
+  width: 120px;
+  height: 1px;
+  background-color: #c2c2c2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.advantages-grid .advantage-card h4 {
+  color: #00945f;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.advantages-grid .advantage-card p {
+  margin-bottom: 10px;
+}
+
+.advantages-grid .advantage-card a {
+  color: #84bc0b;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.advantages-grid .advantage-card a:hover {
+  text-decoration: underline;
+}
+
+.brand-highlight .brand-highlight-header {
+  background-color: #00945f;
+  padding: 20px;
+}
+
+.brand-highlight .brand-highlight-header h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.brand-highlight .brand-highlight-body {
+  background-color: #ebf7f5;
+  padding: 40px 80px;
+}
+
+.reviews-section {
+  text-align: center;
+}
+
+.reviews-section .reviews-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.reviews-section .review-card {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.reviews-section .review-card .avatar-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.reviews-section .review-card .review-quote {
+  font-style: italic;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.reviews-section .review-card .review-quote::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/quote.png) no-repeat center center/contain;
+  z-index: -1;
+}
+
+.reviews-section .review-card .review-author {
+  font-weight: bold;
+  color: #333;
+}
+
+.reviews-section .review-card .review-author span {
+  color: #00945f;
+  font-weight: normal;
+}
+
+.reviews-section .review-card .review-quote-first,
+.reviews-section .review-card .review-quote-third,
+.reviews-section .review-card .review-author-first,
+.reviews-section .review-card .review-author-second {
+  width: 50%;
+  margin: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: #00945f;
+  border: none;
+}
+
+.legal-footer-section .social-channel-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.legal-footer-section .social-channel-icons img {
+  width: 28px;
+  height: auto;
+}
+
+.legal-footer-section .legal-disclaimer-text p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+.legal-footer-section .legal-disclaimer-text p a {
+  color: #828282;
+}
+
+.legal-footer-section .footer-legal-links p {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.legal-footer-section .footer-legal-links p a {
+  text-decoration: none;
+  color: #828282;
+}
+
+@media (max-width: 768px) {
+  .site-wrapper {
+    padding: 25px 20px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header img {
+    width: 220px;
+  }
+  .hero-banner {
+    background-position: center left;
+    height: 310px;
+  }
+  .careers-overview button {
+    margin: 20px auto 0;
+  }
+  .advantages-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .advantages-grid .advantage-card {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  .advantages-grid .advantage-card::after {
+    display: none;
+  }
+  .advantages-grid .advantage-card h4 {
+    font-size: 20px;
+  }
+  .brand-highlight .brand-highlight-header h4 {
+    font-size: 20px;
+  }
+  .brand-highlight .brand-highlight-body {
+    padding: 20px;
+  }
+  .reviews-section .reviews-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .reviews-section .review-card {
+    max-width: 100%;
+  }
+  .reviews-section .review-card .review-quote-first,
+  .reviews-section .review-card .review-quote-third,
+  .reviews-section .review-card .review-author-first,
+  .reviews-section .review-card .review-author-second {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
